@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="assets/css/carrinho.css">
+    <link rel="stylesheet" href="assets/css/checkout.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="nav-bar">
+            <a class="link-logo" href="home.html">
+                <div class="logo">
+                    <img src="assets/imagens/logo-branca.png" alt="Logo de Nelson Doces">
+                    <h3>Nelson <span class="destaque">Doces</span></h3>
+                </div>
+            </a>
+    
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"> <a class="nav-link active" href="home.html">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#sobre-nos">Sobre Nós</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="catalogo.html">Catálogo</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="carrinho.html">Seu Carrinho</a> </li>
+                    <li class="nav-item edit"> <a class="nav-link" href="adm.html">Editar Catálogo</a> </li>
+                </ul>
+            </div>
+    
+            <div class="login-button">
+                <button> <a class="login-link" href="login.html">Entrar</a></button>
+            </div>
+                    
+        </nav>
+    </header>
+    <main>
+        <h1 class="titulo">Confirme seu pedido</h1>
+        <div id="carrinho">
+            <div class="tabela-head">
+                <div>Imagem</div>
+                <div>Produto</div>
+                <div>Quantidade</div>
+                <div>Valor</div>
+            </div>
+            <div class="tabela-body">
+            </div>
+        </carrinho>
+        <div class="total">
+            <span class="total-valor">TOTAL: <span class="preco-span">R$ </span><br></span>
+            <button class="checkout-button" onclick="checkout('abrir')">Checkout</button>
+        </div>
+        
+    </main>    
+        <!-- checkout -->
+        <form id="checkout-form" action="">
+            
+            <div class="form-header">
+                <button class="button" onclick="checkout('sair')"><span class="span-button">x</span></button>
+                <h1>Finalizando sua compra</h1>
+                <h5>Insira suas informações</h5>
+            </div>
+    
+            <div class="input-box">
+                <input type="text" id="nome" required>
+                <label for="nome">Nome</label>
+            </div>
+    
+            <div class="input-box">
+                <input type="text" id="rua" required>
+                <label for="rua">Rua</label>
+            </div>
+    
+            <div class="agrupador">
+                <div class="input-box">
+                    <input type="text" id="numero" required>
+                    <label for="numero">Número</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="bairro" required>
+                    <label for="bairro">Bairro</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="cidade" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+            </div>
+    
+            <div class="input-box">
+                <input type="text" id="numero-cartao" required>
+                <label for="numero-cartao">Número do Cartão</label>
+            </div>
+    
+            <div class="agrupador-2">
+                <div class="input-box">
+                    <input type="month" id="data-validade" required>
+                    <label for="data-validade" class="date-label">Data de Validade</label>
+                </div>
+    
+                <div class="input-box">
+                    <input type="text" id="codigo-seguranca" required>
+                    <label for="codigo-seguranca">Código de Segurança</label>
+                </div>
+            </div>
+    
+            <button type="submit" id="submit-button">Finalizar Compra</button>
+        </form>
+</body>
+<script src="assets/js/carrinho.js"></script>
+</html>
