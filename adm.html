@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/adm.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <header id="header">
@@ -20,8 +21,8 @@
                 <li class="nav-item"> <a class="nav-link active" href="home.html">Inicio</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="home.html#sobre-nos">Sobre Nós</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="catalogo.html">Catálogo</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="carrinho.html">Seu Carrinho</a> </li>
                 <li class="nav-item edit"> <a class="nav-link" href="adm.html">Editar Catálogo</a> </li>
+                <li class="nav-item"> <a class="nav-link carrinho-link" href="carrinho.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a> </li>
 
             </ul>
         </div>
@@ -35,20 +36,22 @@
 <body>
     <main>
         <form id="form">
+            <h1 class="titulo">Editar Catálogo</h1>
             <div class="input-box">
-                <label for="produto">Produto</label>
+                
+                <label class="label" for="produto"><i class="fa-solid fa-store" style="color: #ffffff;"></i>  Produto</label>
                 <input type="text" id="produto">
             </div>
             <div class="input-box">
-                <label for="preco">Preço</label>
+                <label class="label" for="preco"><i class="fa-solid fa-money-bill" style="color: #ffffff;"></i>  Preço</label>
                 <input type="number" id="preco">
             </div>
             <div class="input-box">
-                <label for="descricao">Descrição</label>
-                <input type="area" id="descricao">
+                <label class="label" for="descricao"><i class="fa-solid fa-comment" style="color: #ffffff;"></i>  Descrição</label>
+                <input type="text   " id="descricao">
             </div>
             <div class="input-box">
-                <label for="foto">URL da foto do produto</label>
+                <label class="label" for="foto"><i class="fa-solid fa-camera" style="color: #ffffff;"></i>  URL da foto do produto</label>
                 <input type="text" id="foto">
             </div>
             <button id="addcatalogo" type="button">Adicionar ao catálogo</button>

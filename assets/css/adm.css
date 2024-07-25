@@ -87,7 +87,9 @@ html {
     font-weight:  normal;
     color: var(--branco);
 }
-
+.carrinho-link{
+    font-size: 26px;
+}
 .edit{
     display: none;
 }
@@ -119,36 +121,57 @@ main{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    background-image: url(../imagens/fundo-4.png);
+    background-size: cover;
 }
+.titulo{
+    color: var(--branco);
+}
+
 #form{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px dashed var(--amarelo);
+    flex-direction: column;
+    background-color: var(--amarelo);
     padding: 20px;
-    gap: 30px;
+    gap: 15px;
     border-radius: 7px;
+    width: 50%;
+    margin-top: 50px;
 }
 .input-box{
-    padding: 15px;
-    border:2px solid #D93654;
+    padding: 19px;
+    width: 100%;
+
 }
-input{
-    height: 40px;
-    letter-spacing: 3px;
+.label {
+    color: var(--branco);
+}
+input {
+    height: 20px;
+    letter-spacing: 1px;
     outline: none;
     border: none;
     border-bottom: 2px solid var(--rosa);
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    padding: 10px 10px 10px 0;
 }
+
 #addcatalogo{
     padding: 10px 3px;
-    width: 10%;
+    width: 50%;
     transition: 0.3s ease;
-    background-color: #F29A2E;
+    background-color: var(--rosa);
     color: #FFFDF6;
     border: none;
     border-radius: 15px;
+    cursor: pointer;
+    border-bottom: 3px solid var(--rosa);
 }
 #addcatalogo:hover{
     transform: scale(1.03);
